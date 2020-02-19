@@ -1,0 +1,13 @@
+{
+  "version": "0.0.1",
+  "npmClient": "npm",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "registry": "https://registry.reaction-club.app"
+    }
+  },
+  "packages": [
+    "packages/*"
+  ]
+}
