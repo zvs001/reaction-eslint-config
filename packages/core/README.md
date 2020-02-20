@@ -1,10 +1,10 @@
 ## Install
 
-`npm i @reaction-eslint/eslint-plugin-core -D`
+`npm i @reaction-eslint/eslint-config-core -D`
 
 or
 
-`yarn add @reaction-eslint/eslint-plugin-core --dev`
+`yarn add @reaction-eslint/eslint-config-core --dev`
 
 
 
