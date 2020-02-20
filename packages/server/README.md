@@ -1,3 +1,8 @@
+## Description
+
+Set of rules for typescript + mocha tests project
+
+
 ## Install
 
 `npm i @reaction-eslint/eslint-config-server -D`
@@ -12,6 +17,11 @@ or
 
 ```json
 {
+  "env": {
+    "es2017": true,
+    "node": true,
+    "mocha": true
+  },
   "extends": [
     "@reaction-eslint/server"
   ]
