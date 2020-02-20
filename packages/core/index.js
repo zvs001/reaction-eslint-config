@@ -1,11 +1,7 @@
-
 module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
-  extends: [
-    'airbnb-base',
-    'plugin:@typescript-eslint/recommended',
-  ],
+  extends: ['airbnb-base', 'plugin:@typescript-eslint/recommended'],
   rules: {
     indent: [2, 2, { SwitchCase: 1 }],
     camelcase: 'off',
@@ -51,14 +47,16 @@ module.exports = {
     '@typescript-eslint/member-delimiter-style': ['error', { multiline: { delimiter: 'none' } }],
     '@typescript-eslint/no-object-literal-type-assertion': 'off',
 
-
-    'import/order':  ['error', {
-      'newlines-between': 'never',
-      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-      alphabetize: {
-        order: 'asc',
-        caseInsensitive: false,
+    'import/order': [
+      'error',
+      {
+        'newlines-between': 'never',
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: false,
+        },
       },
-    }],
+    ],
   },
 }

@@ -1,12 +1,6 @@
-
 module.exports = {
   plugins: ['prettier', 'react', 'react-hooks'],
-  extends: [
-    '@reaction-eslint/core',
-    'prettier',
-    'airbnb',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['airbnb', '@reaction-eslint/core', 'prettier', 'plugin:prettier/recommended'],
   rules: {
     'react/sort-comp': [
       'error',
@@ -41,6 +35,14 @@ module.exports = {
     'react/static-property-placement': 'off',
     'react/state-in-constructor': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'import/extensions': [
+      'error',
+      {
+        jsx: 'never',
+        tsx: 'never',
+        ts: 'never',
+      },
+    ],
   },
   globals: {},
   settings: {
