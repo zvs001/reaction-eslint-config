@@ -1,8 +1,11 @@
 
 module.exports = {
-  plugins: ['prettier'],
+  plugins: ['prettier', 'react', 'react-hooks'],
   extends: [
     '@reaction-eslint/core',
+    'prettier',
+    'airbnb',
+    'plugin:prettier/recommended',
   ],
   rules: {
     'react/sort-comp': [
