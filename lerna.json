@@ -1,7 +1,6 @@
 {
   "version": "0.0.11",
   "npmClient": "npm",
-  "useWorkspaces": true,
   "command": {
     "publish": {
       "registry": "https://registry.reaction-club.app",
@@ -9,6 +8,9 @@
     }
   },
   "packages": [
-    "packages/*"
+    "core",
+    "react",
+    "react-native",
+    "server"
   ]
 }
