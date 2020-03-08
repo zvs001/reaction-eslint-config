@@ -1,13 +1,13 @@
 {
   "name": "@reaction-eslint/eslint-config-server",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "",
   "main": "index.js",
   "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@reaction-eslint/eslint-config-core": "^0.0.12",
+    "@reaction-eslint/eslint-config-core": "^0.0.13",
     "eslint-plugin-mocha": "^6.3.0"
   }
 }
