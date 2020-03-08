@@ -8,7 +8,7 @@ module.exports = {
     'plugin:mocha/recommended',
   ],
   rules: {
-
+    "mocha/no-mocha-arrows": "off"
   },
   globals: {
     __DEV__: true,
