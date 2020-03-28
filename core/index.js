@@ -58,5 +58,12 @@ module.exports = {
         },
       },
     ],
+
+    // useless eslint rules
+    "no-plusplus": "off",
+    "no-await-in-loop": "off",
+    "radix": "off",
+    "no-continue": "off",
+    "arrow-parens": ["error", "as-needed"]
   },
 }

@@ -8,7 +8,8 @@ module.exports = {
     'plugin:mocha/recommended',
   ],
   rules: {
-    "mocha/no-mocha-arrows": "off"
+    "mocha/no-mocha-arrows": "off",
+    "mocha/no-setup-in-describe": 0,
   },
   globals: {
     __DEV__: true,
@@ -16,7 +17,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.ios.js', '.android.js', '.json', '.ts', '.tsx', '.ios.ts', '.android.tsx', '.d.ts'],
+        extensions: ['.js', '.json', '.ts', '.d.ts', '.html'],
       },
     },
   },

@@ -43,6 +43,9 @@ module.exports = {
         ts: 'never',
       },
     ],
+
+    // eslint rules
+    "arrow-parens": "error"
   },
   globals: {},
   settings: {
