@@ -7,8 +7,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@reaction-eslint/eslint-config-react": "^0.0.1",
-    "eslint-plugin-react-native": "^2.20.1"
+    "@reaction-eslint/eslint-config-react": "^0.1.0",
+    "eslint-plugin-react-native": "^3.8.1"
   },
   "peerDependencies": {
     "eslint": "6.x",
