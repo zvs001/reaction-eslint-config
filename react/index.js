@@ -45,7 +45,9 @@ module.exports = {
     ],
 
     // eslint rules
-    "arrow-parens": "error"
+    "arrow-parens": "error",
+
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.ts", "**/*.test.tsx"]}]
   },
   globals: {},
   settings: {

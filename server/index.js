@@ -10,6 +10,7 @@ module.exports = {
   rules: {
     "mocha/no-mocha-arrows": "off",
     "mocha/no-setup-in-describe": 0,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.ts"]}]
   },
   globals: {
     __DEV__: true,
