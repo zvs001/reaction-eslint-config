@@ -3,6 +3,7 @@ module.exports = {
   plugins: ['react-native'],
   extends: [
     '@reaction-eslint/react',
+    'plugin:react-native/all'
   ],
   rules: {
     'react-native/no-color-literals': 'off',
