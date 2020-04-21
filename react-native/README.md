@@ -12,6 +12,9 @@ or
 
 ```json
 {
+  "env": {
+    "jest": true
+  },
   "extends": [
     "@reaction-eslint/react-native"
   ]
