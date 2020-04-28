@@ -20,3 +20,11 @@ or
   ]
 }
 ```
+
+### Work
+
+Detox file format: 
+`*.spec.ts`, 
+`*.spec.tsx`,
+`*.spec.js`, 
+`*.spec.jsx`,

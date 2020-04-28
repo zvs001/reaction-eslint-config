@@ -1,19 +1,15 @@
-
 module.exports = {
-  plugins: ['react-native'],
-  extends: [
-    '@reaction-eslint/react',
-    'plugin:react-native/all'
-  ],
+  plugins: ['react-native', 'detox'],
+  extends: ['@reaction-eslint/react', 'plugin:react-native/all'],
   rules: {
-    "global-require": "off",
+    'global-require': 'off',
 
     // react-native plugin
     'react-native/no-color-literals': 'off',
   },
   globals: {
-    "__DEV__": true,
-    "WebSocket": true
+    __DEV__: true,
+    WebSocket: true,
   },
   settings: {
     'import/resolver': {
@@ -22,11 +18,19 @@ module.exports = {
       },
     },
   },
-  "parserOptions": {
-    "ecmaVersion": 8,
-    "ecmaFeatures": {
-      "jsx": true
+  parserOptions: {
+    ecmaVersion: 8,
+    ecmaFeatures: {
+      jsx: true,
     },
-    "sourceType": "module"
+    sourceType: 'module',
   },
+  overrides: [
+    {
+      files: ['./**/*.spec.ts', './**/*.spec.tsx', './**/*.spec.js', './**/*.spec.jsx'],
+      env: {
+        'detox/detox': true,
+      },
+    },
+  ],
 }
