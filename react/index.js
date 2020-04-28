@@ -2,6 +2,20 @@ module.exports = {
   plugins: ['prettier', 'react', 'react-hooks'],
   extends: ['airbnb', '@reaction-eslint/core', 'prettier', 'plugin:prettier/recommended'],
   rules: {
+    'prettier/prettier': [
+      'error',
+      {
+        trailingComma: 'all',
+        tabWidth: 2,
+        semi: false,
+        singleQuote: true,
+        bracketSpacing: true,
+        eslintIntegration: true,
+        printWidth: 120,
+      },
+    ],
+
+    // react rules
     'react/sort-comp': [
       'error',
       {
@@ -45,9 +59,9 @@ module.exports = {
     ],
 
     // eslint rules
-    "arrow-parens": "error",
+    'arrow-parens': 'error',
 
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.ts", "**/*.test.tsx"]}]
+    'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.ts', '**/*.test.tsx'] }],
   },
   globals: {},
   settings: {
