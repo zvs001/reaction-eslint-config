@@ -8,6 +8,8 @@
   "license": "ISC",
   "dependencies": {
     "@reaction-eslint/eslint-config-core": "^0.2.0",
-    "eslint-plugin-mocha": "^6.3.0"
+    "eslint-plugin-mocha": "^6.3.0",
+    "eslint-plugin-chai-expect": "^2.1.0",
+    "eslint-plugin-chai-friendly": "^0.6.0"
   }
 }
